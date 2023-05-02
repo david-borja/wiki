@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block body %}
+    <h1>{{ heading }}</h1>
+    <p>
+        {{ message }}
+    </p>
+    {% if heading == "Entry already exists" %}
+        <p>Here you can check the existing <a href="{% url 'entry' title=title %}">{{ title }} entry.</a></p>
+    {% endif %}
+{% endblock %}

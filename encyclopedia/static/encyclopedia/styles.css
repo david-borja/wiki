@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+code {
+    white-space: pre;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+textarea {
+    min-height: 15rem;
+    max-height: 90vh;
+    flex-grow: 1;
+}
+
+.main {
+    padding: 10px;
+}
+
+.search {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 5px;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    width: 80%;
+}
+
+.vertical span {
+    min-width: 10rem;
+}
+
+.vertical > div {
+    display: flex;
+}
+
+button.add-entry,
+button.edit-entry {
+    width: fit-content;
+    align-self: end;
+    /* margin-right: 8rem */
+}
+
+
+textarea, input {
+    outline: none;
+}
+
+div.edit-entry {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-entry a {
+    text-align: end;
+    margin-top: auto;
+    margin-bottom: 0.5rem;
+    margin-right: 3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}

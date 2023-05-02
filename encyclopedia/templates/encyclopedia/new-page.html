@@ -1,0 +1,32 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+  New Page
+{% endblock %}
+
+{% block body %}
+<h1>New Page</h1>
+<form method="POST" action="{% url 'new_page' %}">
+  {% csrf_token %}
+  <div class="vertical">
+    <div>
+      <span>Title</span>
+      <input
+        class="mb-4"
+        autocomple="off"
+        type="text"
+        name="title"
+        placeholder="JavaScript, React..."
+      />
+    </div>
+    <div class="mb-4">
+      <span>Content</span>
+      <textarea
+        name="content"
+        placeholder="JavaScript is a high-level language that conforms to the ECMAScript standard, and..."
+      ></textarea>
+    </div>
+    <button type="submit" class="add-entry">Submit</button>
+  </div>
+</form>
+{% endblock %}
