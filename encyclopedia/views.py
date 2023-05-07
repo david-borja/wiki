@@ -18,7 +18,7 @@ def entry(request, title):
             "heading": "Not Found"
             })
     return render(request, "encyclopedia/entry.html", {
-        "title": title,
+        "title": title.lower().capitalize(),
         "content": markdown(content)
     })
 
