@@ -83,7 +83,7 @@ def edit_entry(request, title):
 
 def random(request):
     entries = util.list_entries()
-    index = randint(0, len(entries))
+    index = randint(0, len(entries) - 1)
     random_title = entries[index]
     content = util.get_entry(random_title)
     return render(request, "encyclopedia/entry.html", {
